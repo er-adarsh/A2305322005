@@ -1,0 +1,33 @@
+.url-form-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.url-input {
+  grid-column: span 12;
+}
+
+.validity-input {
+  grid-column: span 6;
+}
+
+.shorten-button {
+  grid-column: span 6;
+}
+
+.custom-code {
+  grid-column: span 12;
+}
+
+@media (min-width: 900px) {
+  .url-input {
+    grid-column: span 8;
+  }
+  .validity-input {
+    grid-column: span 2;
+  }
+  .shorten-button {
+    grid-column: span 2;
+  }
+}
